@@ -1,0 +1,37 @@
+.single-topbar {
+    margin-top: 30px;
+}
+
+.single-content{
+    margin: 30px 0;
+}
+
+.site-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* responsive */
+
+@media (max-width: 768px){
+    .site-main{
+        flex-direction: column;
+    }
+    .product-gallery,
+    .product-info{
+        width: 100% !important;
+        padding: 0;
+    }
+    .site-main .product-info{
+        margin-top: 30px;
+    }
+    .product-info .cart-button button{
+        width: 100%;
+    }
+    .values-list span{
+        flex: 1;
+        padding: 6px !important ;
+        text-align: center;
+        display: inline-block;
+    }
+}
